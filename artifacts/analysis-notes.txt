@@ -1,0 +1,3 @@
+Observed urgent language in subject
+Sender domain does not match official company domain
+Links redirect to suspicious website
