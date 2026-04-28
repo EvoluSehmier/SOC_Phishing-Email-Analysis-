@@ -1,39 +1,49 @@
-# Phishing Email Analysis (SOC Project)
+# Phishing Email Analysis (SOC Investigation)
 
-## Overview
-This project analyzes a suspicious email to determine whether it is a phishing attempt.
+## 📌 Executive Summary
+A suspicious email was analyzed and determined to be a phishing attempt based on multiple indicators of compromise including spoofed domains and malicious links.
 
-## Objective
-Identify indicators of phishing and assess potential security risks.
+## 🎯 Objective
+Identify phishing indicators and assess risk level.
 
-## Tools Used
-- Email header analyzer
+## 🛠 Tools Used
 - VirusTotal
-- Manual inspection
+- Email Header Analyzer
+- WHOIS Lookup
 
-## Analysis Process
+## 🔍 Investigation Steps
 
-### 1. Email Review
-- Checked sender address
-- Reviewed subject and message content
+### 1. Initial Triage
+- Email flagged due to urgent language and suspicious sender
 
 ### 2. Header Analysis
-- Examined IP addresses
-- Checked email routing path
+- Source IP inconsistent with claimed domain
+- SPF/DKIM checks failed
 
-### 3. Link & Attachment Inspection
-- Scanned links using VirusTotal
-- Looked for suspicious domains
+### 3. Domain Analysis
+- Domain recently registered
+- No legitimate business association
 
-## Indicators of Compromise (IOCs)
-- Suspicious sender domain
-- Mismatched URLs
-- Urgent language in message
+### 4. URL Analysis
+- Link redirects to non-secure login page
+- Flagged as malicious in VirusTotal
 
-## Conclusion
-The email shows clear signs of phishing and should not be trusted.
+## 🚨 Indicators of Compromise (IOCs)
+- Domain: fake-login-alert.com
+- IP: 192.168.1.1
+- URL: http://fake-login-alert.com/reset
 
-## Recommendations
-- Do not click links
-- Report email to security team
-- Block sender domain
+## ⚖️ Risk Assessment
+**Severity: High**  
+User credential theft likely
+
+## ✅ Response Actions
+- Blocked domain
+- Reported phishing attempt
+- Advised user awareness
+
+## 📚 MITRE ATT&CK Mapping
+- T1566.002 – Phishing: Spearphishing Link
+
+## 🧠 Lessons Learned
+User awareness and email filtering are critical to preventing phishing attacks.
