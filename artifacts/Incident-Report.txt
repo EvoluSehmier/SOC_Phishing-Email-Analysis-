@@ -1,0 +1,14 @@
+INCIDENT REPORT
+
+Incident Type: Phishing
+Severity: High
+
+Summary:
+User received phishing email attempting credential theft.
+
+Actions Taken:
+- Analyzed email
+- Identified malicious indicators
+- Reported and blocked sender
+
+Status: Resolved
